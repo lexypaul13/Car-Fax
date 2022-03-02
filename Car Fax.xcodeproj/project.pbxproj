@@ -16,6 +16,8 @@
 		571F969027CF2EF800705D56 /* Car_FaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F968F27CF2EF800705D56 /* Car_FaxTests.swift */; };
 		571F969A27CF2EF800705D56 /* Car_FaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F969927CF2EF800705D56 /* Car_FaxUITests.swift */; };
 		571F969C27CF2EF800705D56 /* Car_FaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F969B27CF2EF800705D56 /* Car_FaxUITestsLaunchTests.swift */; };
+		571F96AB27CF300E00705D56 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F96AA27CF300E00705D56 /* Car.swift */; };
+		571F96AD27CF308100705D56 /* Car Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F96AC27CF308100705D56 /* Car Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		571F969527CF2EF800705D56 /* Car FaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Car FaxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		571F969927CF2EF800705D56 /* Car_FaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car_FaxUITests.swift; sourceTree = "<group>"; };
 		571F969B27CF2EF800705D56 /* Car_FaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car_FaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		571F96AA27CF300E00705D56 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		571F96AC27CF308100705D56 /* Car Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car Service.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				571F967827CF2EF600705D56 /* AppDelegate.swift */,
 				571F967A27CF2EF600705D56 /* SceneDelegate.swift */,
 				571F967C27CF2EF600705D56 /* ViewController.swift */,
+				571F96AE27CF318000705D56 /* Model */,
 				571F967E27CF2EF600705D56 /* Main.storyboard */,
 				571F968127CF2EF700705D56 /* Assets.xcassets */,
 				571F968327CF2EF700705D56 /* LaunchScreen.storyboard */,
@@ -125,6 +130,15 @@
 				571F969B27CF2EF800705D56 /* Car_FaxUITestsLaunchTests.swift */,
 			);
 			path = "Car FaxUITests";
+			sourceTree = "<group>";
+		};
+		571F96AE27CF318000705D56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				571F96AA27CF300E00705D56 /* Car.swift */,
+				571F96AC27CF308100705D56 /* Car Service.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				571F967D27CF2EF600705D56 /* ViewController.swift in Sources */,
+				571F96AD27CF308100705D56 /* Car Service.swift in Sources */,
 				571F967927CF2EF600705D56 /* AppDelegate.swift in Sources */,
+				571F96AB27CF300E00705D56 /* Car.swift in Sources */,
 				571F967B27CF2EF600705D56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
