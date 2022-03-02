@@ -8,6 +8,15 @@
 import UIKit
 let imageCache = NSCache<NSString, UIImage>()
 
+func callNumber(phoneNumber:String) {
+    if let phoneCallURL = URL(string: "\(phoneNumber)") {
+        let application:UIApplication = UIApplication.shared
+        if (application.canOpenURL(phoneCallURL)) {
+            application.open(phoneCallURL, options: [:], completionHandler: nil)
+        }
+    }
+}
+
 extension UIImageView {
     func downloadImage(_ imgURL: String, placeholder: UIImage? = nil)  {
         guard let url = URL(string: imgURL) else { return  }

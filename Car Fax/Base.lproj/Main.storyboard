@@ -42,7 +42,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="0jr-Oj-2Pt">
                                                     <rect key="frame" x="186" y="0.0" width="134" height="237"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="bRe-Dk-X6O">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="bRe-Dk-X6O">
                                                             <rect key="frame" x="0.0" y="0.0" width="134" height="20.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="2014" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLo-zd-88I">
@@ -131,7 +131,7 @@
                                             <outlet property="makeLabel" destination="oAY-4A-Jvf" id="JgN-op-kra"/>
                                             <outlet property="mileageLabel" destination="odi-Id-v1r" id="Slc-NM-5Mb"/>
                                             <outlet property="modelLabrl" destination="rh7-nc-zQY" id="fUl-xo-uPU"/>
-                                            <outlet property="phoneButton" destination="3cV-8j-Mjd" id="EKk-Gc-Quh"/>
+                                            <outlet property="phoneButton" destination="3cV-8j-Mjd" id="3IK-VC-kDd"/>
                                             <outlet property="priceLabel" destination="HcS-4x-cge" id="kUX-DS-bYm"/>
                                             <outlet property="stateLabel" destination="7LE-R6-pwU" id="FDY-Qy-dh0"/>
                                             <outlet property="trimLabel" destination="TgA-ft-xev" id="Il4-Tv-RMT"/>

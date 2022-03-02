@@ -19,6 +19,7 @@ class ListOfCarsTableViewCell: UITableViewCell {
     @IBOutlet weak var stateLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     
+    @IBOutlet weak var phoneButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
