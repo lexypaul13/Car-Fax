@@ -54,7 +54,7 @@ extension ListOfCarsViewController: UITableViewDataSource, UITableViewDelegate{
         cell.priceLabel.text = String("$\(carsIndex.currentPrice)")
         cell.modelLabrl.text =  carsIndex.model
         cell.trimLabel.text = carsIndex.trim
-        cell.locationLabel.text = carsIndex.dealer.address ?? "No Adreess"
+        cell.locationLabel.text = carsIndex.dealer.address
         cell.stateLabel.text = carsIndex.dealer.state
         cell.mileageLabel.text = String("\(carsIndex.mileage)k mi")
         cell.phoneButton.setTitle(carsIndex.dealer.phone.toPhoneNumber(), for: .normal)

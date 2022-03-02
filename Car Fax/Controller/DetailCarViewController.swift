@@ -18,7 +18,7 @@ class DetailCarViewController: UIViewController {
     }
     func downloadImage(){
         if let _ = selectedPhotos{
-            carImage.downloadImage(selectedPhotos?.firstPhoto.large ?? "", placeholder: UIImage(named: "no image large"))
+            carImage.downloadImage(selectedPhotos?.firstPhoto.large ?? "", placeholder:nil)
         }
     }
 

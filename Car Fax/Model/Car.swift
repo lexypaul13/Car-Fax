@@ -45,7 +45,7 @@ struct Listing: Codable, Hashable {
 
 struct Dealer: Codable,Hashable {
     
-    let address: String
+    let address: String?
     let city: String
     let phone: String
     let state: String
