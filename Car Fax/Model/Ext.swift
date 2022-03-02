@@ -9,13 +9,18 @@ import UIKit
 let imageCache = NSCache<NSString, UIImage>()
 
 func callNumber(phoneNumber:String) {
-    if let phoneCallURL = URL(string: "\(phoneNumber)") {
-        let application:UIApplication = UIApplication.shared
-        if (application.canOpenURL(phoneCallURL)) {
-            application.open(phoneCallURL, options: [:], completionHandler: nil)
+        if let url = URL(string: "tel://\(phoneNumber)") {
+            UIApplication.shared.open(url, options: [:]) { success in
+                if success {
+                    print("Making phone call")
+                } else {
+                    print("Something went wrong while making phone call")
+                }
+            }
+        } else {
+            print("Failed to make phone call")
         }
     }
-}
 
 extension UIImageView {
     func downloadImage(_ imgURL: String, placeholder: UIImage? = nil)  {
