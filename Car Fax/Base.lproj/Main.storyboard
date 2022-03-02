@@ -131,10 +131,12 @@
                                             <outlet property="makeLabel" destination="oAY-4A-Jvf" id="JgN-op-kra"/>
                                             <outlet property="mileageLabel" destination="odi-Id-v1r" id="Slc-NM-5Mb"/>
                                             <outlet property="modelLabrl" destination="rh7-nc-zQY" id="fUl-xo-uPU"/>
+                                            <outlet property="phoneButton" destination="3cV-8j-Mjd" id="EKk-Gc-Quh"/>
                                             <outlet property="priceLabel" destination="HcS-4x-cge" id="kUX-DS-bYm"/>
                                             <outlet property="stateLabel" destination="7LE-R6-pwU" id="FDY-Qy-dh0"/>
                                             <outlet property="trimLabel" destination="TgA-ft-xev" id="Il4-Tv-RMT"/>
                                             <outlet property="yearLabel" destination="sLo-zd-88I" id="16d-em-t53"/>
+                                            <segue destination="KDt-xB-Fca" kind="show" identifier="cars" id="nIw-mQ-Nld"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -156,6 +158,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ouE-UP-smL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="382.60869565217394" y="54.910714285714285"/>
+        </scene>
+        <!--Detail Car View Controller-->
+        <scene sceneID="S7T-yu-f7a">
+            <objects>
+                <viewController id="KDt-xB-Fca" customClass="DetailCarViewController" customModule="Car_Fax" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sOe-8U-L7Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fTg-Lp-l5h">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yiQ-19-Lgs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yiQ-19-Lgs" firstAttribute="bottom" secondItem="fTg-Lp-l5h" secondAttribute="bottom" id="Cy8-Pt-TR5"/>
+                            <constraint firstItem="fTg-Lp-l5h" firstAttribute="leading" secondItem="yiQ-19-Lgs" secondAttribute="leading" id="gLz-OH-hoe"/>
+                            <constraint firstItem="yiQ-19-Lgs" firstAttribute="trailing" secondItem="fTg-Lp-l5h" secondAttribute="trailing" id="xH7-S6-48o"/>
+                            <constraint firstItem="fTg-Lp-l5h" firstAttribute="top" secondItem="yiQ-19-Lgs" secondAttribute="top" id="zRW-p5-Wlo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NPg-jr-qhQ"/>
+                    <connections>
+                        <outlet property="carImage" destination="fTg-Lp-l5h" id="aiw-sA-CjC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dH6-j5-gno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="51"/>
         </scene>
     </scenes>
     <resources>
